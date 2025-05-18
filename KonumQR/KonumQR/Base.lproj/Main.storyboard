@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KonumQR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0906" translatesAutoresizingMaskIntoConstraints="NO" id="KhD-SV-mkk">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KONUMUNUZ:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtE-Ir-c2C">
+                                <rect key="frame" x="85.666666666666671" y="104" width="247.33333333333331" height="34.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mtE-Ir-c2C" secondAttribute="height" multiplier="36:5" id="ncg-ly-PQ0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kPp-Mk-mDJ">
+                                <rect key="frame" x="34" y="158.33333333333334" width="320" height="322.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kPp-Mk-mDJ" secondAttribute="height" multiplier="119:120" id="kLN-DT-2nz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dis-3a-USq">
+                                <rect key="frame" x="121.99999999999999" y="783" width="174.66666666666663" height="34.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dis-3a-USq" secondAttribute="height" multiplier="178:35" id="rtW-VG-zoe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="QR OLUŞTUR" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="strokeColor" systemColor="systemGray6Color"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" red="0.89119895459999998" green="0.76921960481820317" blue="0.77663552178048534" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="showLocationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7xJ-hf-zxP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KhD-SV-mkk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2VF-hf-elO"/>
+                            <constraint firstItem="KhD-SV-mkk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3u8-s4-VeT"/>
+                            <constraint firstItem="kPp-Mk-mDJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="5r1-55-3yo"/>
+                            <constraint firstItem="KhD-SV-mkk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6Do-sK-xbs"/>
+                            <constraint firstItem="KhD-SV-mkk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7k1-Kk-Rck"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dis-3a-USq" secondAttribute="bottom" constant="0.67000000000000004" id="7o0-N9-KUI"/>
+                            <constraint firstItem="KhD-SV-mkk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8Gf-5V-zO5"/>
+                            <constraint firstItem="KhD-SV-mkk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8a3-OZ-5KT"/>
+                            <constraint firstItem="kPp-Mk-mDJ" firstAttribute="top" secondItem="mtE-Ir-c2C" secondAttribute="bottom" constant="20" id="A3P-L9-w16"/>
+                            <constraint firstItem="kPp-Mk-mDJ" firstAttribute="top" secondItem="mtE-Ir-c2C" secondAttribute="bottom" constant="20" id="Ajs-mv-0gz"/>
+                            <constraint firstAttribute="bottom" secondItem="KhD-SV-mkk" secondAttribute="bottom" id="BuP-LK-tBp"/>
+                            <constraint firstItem="dis-3a-USq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="Gl5-oi-I1f"/>
+                            <constraint firstItem="kPp-Mk-mDJ" firstAttribute="top" secondItem="mtE-Ir-c2C" secondAttribute="bottom" constant="20" id="VbS-Bt-xbp"/>
+                            <constraint firstItem="kPp-Mk-mDJ" firstAttribute="top" secondItem="mtE-Ir-c2C" secondAttribute="bottom" constant="20" id="XIG-Hj-8iC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kPp-Mk-mDJ" secondAttribute="trailing" constant="39" id="Yzn-lf-cVy"/>
+                            <constraint firstItem="KhD-SV-mkk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZdY-K9-Naa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dis-3a-USq" secondAttribute="trailing" constant="96.329999999999998" id="bmw-Zr-s70"/>
+                            <constraint firstItem="dis-3a-USq" firstAttribute="top" secondItem="kPp-Mk-mDJ" secondAttribute="bottom" constant="302" id="gwH-46-Cnn"/>
+                            <constraint firstAttribute="bottom" secondItem="KhD-SV-mkk" secondAttribute="bottom" id="hdw-oF-bu6"/>
+                            <constraint firstItem="mtE-Ir-c2C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85.670000000000002" id="mws-I4-NJk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dis-3a-USq" secondAttribute="bottom" constant="0.67000000000000004" id="qeZ-3G-8F1"/>
+                            <constraint firstItem="KhD-SV-mkk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sDV-M0-icy"/>
+                            <constraint firstItem="KhD-SV-mkk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="svO-dH-XNt"/>
+                            <constraint firstAttribute="trailing" secondItem="mtE-Ir-c2C" secondAttribute="trailing" constant="60" id="sxb-hS-mzA"/>
+                            <constraint firstItem="dis-3a-USq" firstAttribute="top" secondItem="kPp-Mk-mDJ" secondAttribute="bottom" constant="302" id="vvI-E4-odT"/>
+                            <constraint firstAttribute="bottom" secondItem="KhD-SV-mkk" secondAttribute="bottom" id="x7K-8t-JJ4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="qrImageView" destination="kPp-Mk-mDJ" id="as1-fN-Ygg"/>
+                        <outlet property="showLocationButton" destination="dis-3a-USq" id="eXC-mY-lZb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.343511450381679" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_0906" width="736" height="1308"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
